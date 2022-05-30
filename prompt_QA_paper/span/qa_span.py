@@ -197,9 +197,9 @@ if __name__ == '__main__':
         # output of tokenizer:
         # { 'input_ids': [[], [], []...], 'token_type_ids':, [[], [], []...], 'attention_mask': [[], [], []...] }
 
-        train_encodings = tokenizer(train_contexts, train_questions, truncation=True, padding=True)
-        dev_encodings = tokenizer(dev_contexts, dev_questions, truncation=True, padding=True)
-        test_encodings = tokenizer(test_contexts, test_questions, truncation=True, padding=True)
+        train_encodings = tokenizer(train_questions, train_contexts,  truncation=True, padding=True)
+        dev_encodings = tokenizer(dev_questions, dev_contexts,  truncation=True, padding=True)
+        test_encodings = tokenizer(test_questions, test_contexts, truncation=True, padding=True)
 
         add_token_positions(train_encodings, train_answers)
         add_token_positions(dev_encodings, dev_answers)
