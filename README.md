@@ -1,2 +1,2 @@
 # Prompt_QA
-Prompt_based linear-probing fine-tuning on cross-domain QA
+This repository is the implementation of Learning to Generalize for Cross-Domain QA
